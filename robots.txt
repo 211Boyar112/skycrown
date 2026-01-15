@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sky-crown-online-casino.it.com/sitemap.xml

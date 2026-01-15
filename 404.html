@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - 404</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to the Sky Crown Casino login guide for helpful information on accessing your account safely.">
+    <meta name="robots" content="noindex, follow">
+    <style>
+        :root {
+            --black: #000000;
+            --white: #FFFFFF;
+            --gray-dark: #1A1A1A;
+            --gray-medium: #2D2D2D;
+            --gray-light: #404040;
+            --accent: #E5E5E5;
+            --button-primary: #333333;
+            --button-hover: #444444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--white);
+            background-color: var(--black);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            background-color: var(--gray-dark);
+            border-radius: 8px;
+            padding: 50px 30px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--gray-light);
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 20px;
+            line-height: 1;
+            text-shadow: 3px 3px 0 var(--gray-light);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: #E0E0E0;
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 14px 30px;
+            background-color: var(--button-primary);
+            color: var(--white);
+            border: 1px solid var(--gray-light);
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--button-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--gray-light);
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .icon {
+            font-size: 5rem;
+            margin-bottom: 30px;
+            color: var(--gray-light);
+        }
+        
+        .search-box {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: var(--gray-medium);
+            border-radius: 6px;
+        }
+        
+        .search-box h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        .search-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .search-link {
+            padding: 8px 16px;
+            background-color: var(--gray-dark);
+            border: 1px solid var(--gray-light);
+            border-radius: 4px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        
+        .search-link:hover {
+            background-color: var(--gray-light);
+            color: var(--white);
+        }
+        
+        .disclaimer {
+            background-color: rgba(45, 45, 45, 0.9);
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #CC0000;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray-light);
+            width: 100%;
+            max-width: 800px;
+            font-size: 0.9rem;
+            color: #B0B0B0;
+        }
+        
+        .site-map {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .site-map a {
+            color: #B0B0B0;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .site-map a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 10px;
+            }
+            
+            .search-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .search-link {
+                width: 100%;
+                max-width: 250px;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🔍</div>
+        
+        <div class="error-code">404</div>
+        
+        <h1>Page Not Found</h1>
+        
+        <p>The page you're looking for doesn't exist or may have been moved. This is an informational guide for Sky Crown Casino login procedures, not the official casino website.</p>
+        
+        <p>You might have been looking for information about logging into Sky Crown Casino. Below are the most helpful pages from our guide:</p>
+        
+        <div class="search-box">
+            <h3>Popular Pages from Our Guide</h3>
+            <div class="search-links">
+                <a href="index#how-to-login" class="search-link">How to Login Guide</a>
+                <a href="index#app-login" class="search-link">Mobile App Login</a>
+                <a href="index#login-problems" class="search-link">Login Problems & Solutions</a>
+                <a href="index#legitimacy" class="search-link">Is Sky Crown Casino Legit?</a>
+                <a href="index#faq" class="search-link">Frequently Asked Questions</a>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <a href="/" class="btn">Go to Homepage</a>
+            <a href="index#how-to-login" class="btn btn-secondary">Login Guide</a>
+            <a href="index#faq" class="btn btn-secondary">FAQ</a>
+        </div>
+        
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> This website is not affiliated with, endorsed by, or connected to Sky Crown Casino. This is an independent informational guide created to help users. We do not collect any personal data or provide access to real-money gambling.
+        </div>
+    </div>
+    
+    <footer>
+        <div class="site-map">
+            <a href="/">Home</a>
+            <a href="index#how-to-login">Login Guide</a>
+            <a href="index#app-login">Mobile App</a>
+            <a href="index#login-problems">Troubleshooting</a>
+            <a href="index#legitimacy">Legitimacy Check</a>
+            <a href="index#withdrawal-access">Withdrawal Info</a>
+            <a href="index#faq">FAQ</a>
+        </div>
+        <p style="margin-top: 20px; text-align: center;">© 2023 Sky Crown Casino Login Guide. Independent informational resource.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchLinks = document.querySelectorAll('.search-link');
+            searchLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Get the target page and anchor
+                    const href = this.getAttribute('href');
+                    const [page, anchor] = href.split('#');
+                    
+                    // If we're already on index.html, just scroll to the anchor
+                    if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+                        if (anchor) {
+                            const element = document.getElementById(anchor);
+                            if (element) {
+                                window.scrollTo({
+                                    top: element.offsetTop - 20,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    } else {
+                        // Navigate to index.html with anchor
+                        window.location.href = href;
+                    }
+                });
+            });
+        });
+        
+        // Track 404 errors (for analytics if needed)
+        console.log('404 Page Accessed - Path:', window.location.pathname);
+    </script>
+</body>
+</html>
